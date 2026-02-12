@@ -1,9 +1,10 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"APSR":
+  url: https://www.cambridge.org/core/journals/american-political-science-review
+  color: "#1a5276"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"AJPS":
+  url: https://onlinelibrary.wiley.com/journal/15405907
+  color: "#7d3c98"
 
-"Vision":
-  color: "#009f36"
+"WP":
+  color: "#999999"
