@@ -125,6 +125,14 @@
               </button>
             </li>
           {% endif %}
+          {% if site.data.socials.scholar_userid %}
+            <!-- Google Scholar -->
+            <li class="nav-item">
+              <a class="nav-link" href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}" title="Google Scholar" target="_blank">
+                <i class="ai ai-google-scholar"></i>
+              </a>
+            </li>
+          {% endif %}
           {% if site.enable_darkmode %}
             <!-- Toogle theme mode -->
             <li class="toggle-container">

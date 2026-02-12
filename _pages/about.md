@@ -6,7 +6,7 @@ subtitle:
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 working_papers: true
-social: true # includes social icons at the bottom of the page
+social: false
 
 announcements:
   enabled: false
