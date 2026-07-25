@@ -38,8 +38,9 @@ of them are processed or published. Do not treat these as live content:
 
 - `_pages/`, `_posts/`, `_projects/`, `_news/`, `_books/`, `_bibliography/`, `_data/`,
   `_layouts/*.liquid`, `_config.yml` — leftover al-folio source.
-- `README.md`, `INSTALL.md`, `CUSTOMIZE.md`, `FAQ.md`, `CONTRIBUTING.md` — upstream al-folio theme
-  docs. They describe the old Jekyll theme, **not** this site. Candidates for removal (ask Ben).
+- `README.md` — leftover upstream al-folio theme doc. It describes the old Jekyll theme, **not**
+  this site. Candidate for removal (ask Ben). The other upstream docs (`INSTALL.md`,
+  `CUSTOMIZE.md`, `FAQ.md`, `CONTRIBUTING.md`) have already been deleted.
 - `.github/workflows/update-citations.yml` still runs and commits `_data/citations.yml`, but the
   static `index.html` does not read that file — the "Update Google Scholar citations" commits are
   now no-ops for the live site. Candidate for disabling (ask Ben).
