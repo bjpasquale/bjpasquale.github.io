@@ -31,21 +31,23 @@ python3 -m http.server 8000   # → http://localhost:8000
 - `index.html` — the entire live site: bio, timeline (academic + professional), publications
   with abstracts. Edit here.
 
-## Vestigial al-folio scaffolding (NOT served)
+## Al-folio scaffolding — already removed
 
-The redesign left the old theme files in the repo but they are dormant — `.nojekyll` means none
-of them are processed or published. Do not treat these as live content:
+The al-folio leftovers are **gone**; do not go looking for them. Cleared in `2beeee4` (upstream
+theme docs + the no-op citations workflow) and `0d0fd41` ("Remove al-folio theme scaffolding"):
 
-- `_pages/`, `_posts/`, `_projects/`, `_news/`, `_books/`, `_bibliography/`, `_data/`,
-  `_layouts/*.liquid`, `_config.yml` — leftover al-folio source.
-- `README.md` — leftover upstream al-folio theme doc. It describes the old Jekyll theme, **not**
-  this site. Candidate for removal (ask Ben). The other upstream docs (`INSTALL.md`,
-  `CUSTOMIZE.md`, `FAQ.md`, `CONTRIBUTING.md`) have already been deleted.
-- `.github/workflows/update-citations.yml` still runs and commits `_data/citations.yml`, but the
-  static `index.html` does not read that file — the "Update Google Scholar citations" commits are
-  now no-ops for the live site. Candidate for disabling (ask Ben).
+- Removed: `_pages/`, `_posts/`, `_projects/`, `_news/`, `_books/`, `_data/`, `_layouts/`,
+  `_config.yml`, `INSTALL.md`, `CUSTOMIZE.md`, `FAQ.md`, `CONTRIBUTING.md`, and
+  `.github/workflows/update-citations.yml` (with `_data/citations.yml`).
+- Still present, deliberately: `_bibliography/papers.bib` — the only surviving al-folio file.
+  Not served (`.nojekyll`); kept as the publications source of record.
+- `README.md` is no longer the upstream theme doc — it was rewritten in `2beeee4` to describe
+  this static site accurately.
+
+The whole tracked repo is now 14 files; `git ls-files` is the fastest inventory.
 
 ## Notes
 
 - Mostly dormant — update `index.html` as needed for the academic/professional profile.
-- Domain: currently `bjpasquale.github.io`; planned migration to `benpasquale.com`.
+- Domain: `CNAME` is set to `benpasquale.com` (added in `dee7a49`). The repo and the default
+  Pages host are still `bjpasquale.github.io`.
