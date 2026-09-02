@@ -1,6 +1,6 @@
 # bjpasquale.github.io
 
-Personal academic + professional site for **Benjamin J. Pasquale** — political science / South Asia, plus real estate and software. Served at [bjpasquale.github.io](https://bjpasquale.github.io).
+Personal academic + professional site for **Benjamin J. Pasquale** — political science / South Asia, plus real estate and software. Served at [benpasquale.com](https://benpasquale.com). Ben is the founder of [Tiny Weekends](https://tinyweekends.co), a weekend guide for Delaware families.
 
 ## What this is
 
